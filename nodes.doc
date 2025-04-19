@@ -1,0 +1,110 @@
+Step-by-Step Guide to Push a Project to GitHub:
+1. GitHub Par Repository Banaana:
+GitHub par login karo (agar tumhara account nahi hai, toh pehle bana lo).
+
+New Repository banane ke liye:
+
+GitHub ki homepage par jaake "New" pe click karo.
+
+Repository name daalo (jaise my-project).
+
+Public ya Private select karo (agar tum chahte ho ke koi aur tumhare project ko dekh sake toh public choose karo).
+
+"Create repository" pe click karo.
+
+Tumhara repository ab ready hai, lekin abhi tak usme koi files nahi hain.
+
+2. Apne Project Folder Ko Git Ke Saath Initialize Karna:
+Tumhare local project folder ko Git repository banaane ke liye, terminal ya command prompt ka use karte hain.
+
+Apne project folder ko open karo.
+
+Git Bash ya terminal open karo aur us folder mein navigate karo.
+
+Git init command run karo, jo tumhare project folder ko Git repository mein convert kar dega.
+
+
+git init
+Is command ke baad tumhare project folder mein .git naam ka hidden folder ban jayega jo Git ke data ko store karega.
+ 
+ hidden folder dekhne ke liye :- ls -a 
+
+3. Files Ko Stage Aur Commit Karna:
+Tumhare project ki saari files ko Git ko batane ke liye tumhein unhe stage karna hoga.
+
+git add . command run karo, jisse tumhare project ke saare files stage ho jayenge.
+
+bash
+Copy
+Edit
+git add .
+git commit command ke saath changes ko commit karo, aur ek message do ki tumne kya changes kiye hain.
+
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+4. GitHub Repository Ko Remote Repository Ke Roop Mein Add Karna:
+Tumhe apne GitHub repository ko remote repository ke roop mein add karna padega, taaki tum apne local repository ko GitHub par push kar sako.
+
+git remote add origin command ke saath GitHub repository ka URL add karo.
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/<username>/<repository-name>.git
+Example:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/princekumar/my-project.git
+5. Changes Ko GitHub Par Push Karna:
+Ab tumhare local repository mein jo changes hain, unhe GitHub par bhejne ke liye tumhe git push command run karni padegi.
+
+git push -u origin main command se tum apne local repository ko GitHub par push kar sakte ho.
+
+bash
+Copy
+Edit
+git push -u origin main
+-u ka matlab hai ki tum future mein directly git push command use kar sakte ho without specifying origin and branch name.
+
+main ya master tumhara default branch hota hai, agar tumne GitHub par apni repository ka branch main select kiya hai toh yeh use karo. Agar tumne master select kiya hai, toh usko use karo.
+
+6. Verify GitHub Par Check Karna:
+Jab tum push karoge, GitHub par tumhare project ki files update ho jayengi. Tum GitHub repository ke URL ko open karke apne files dekh sakte ho.
+
+Example:
+Maan lo tumhare project ka naam "webApp" hai aur GitHub repository ka URL https://github.com/princekumar/webApp.git hai.
+
+Initialize Git:
+
+bash
+Copy
+Edit
+git init
+Stage Files:
+
+bash
+Copy
+Edit
+git add .
+Commit Files:
+
+bash
+Copy
+Edit
+git commit -m "Initial commit"
+Add Remote Repository:
+
+bash
+Copy
+Edit
+git remote add origin https://github.com/princekumar/webApp.git
+Push to GitHub:
+
+bash
+Copy
+Edit
+git push -u origin main
