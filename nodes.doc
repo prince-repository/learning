@@ -65,4 +65,4 @@ $ git push origin main
 Agar tum master branch use kar rahe ho, toh main ki jagah master likhna hoga:
 
 
-$ git push origin main
+$ git push origin master
